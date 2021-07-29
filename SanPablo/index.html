@@ -11,7 +11,6 @@
         <link rel="stylesheet" type="text/css" href="../assets/DataTables/datatables.min.css"/>
         <!-- Page CSS -->
         <link href="../Navbar/navbar.css" rel="stylesheet" type="text/css">
-        <link href="../Sidebar/sidebars.css" rel="stylesheet" type="text/css">
         <link href="../styles.css" rel="stylesheet" type="text/css">
         <!-- jQuery -->
         <script src="../assets/jQuery/jquery-3.6.0.min.js"></script>
@@ -19,7 +18,11 @@
         <script src="../assets/Bootstrap/js/bootstrap.bundle.min.js"></script>
         <link rel="icon" type="image/png" href="../assets/images/favicon.png"/>
         <title>MP Dashboard - San Pablo</title>
-        
+        <script> 
+            $(function(){
+                $("#includedContent").load("PSP-MissingParts.htm"); 
+            });
+        </script> 
     </head>
     <body>
     
@@ -63,13 +66,8 @@
         <main class="container-fluid">
             <!-- Sidebar -->
             <div class="row">
-                
-                <!-- Main content -->
-                <div class="col-auto mx-auto">
-                    <img src="../SanPablo/Imagen1.png" class="mb-4"/>
-                </div>
+                <div id="includedContent"></div>
             </div>  
         </main>
-    
     </body>
 </html>
