@@ -19,7 +19,11 @@
         <script src="../assets/Bootstrap/js/bootstrap.bundle.min.js"></script>
         <link rel="icon" type="image/png" href="../assets/images/favicon.png"/>
         <title>MP Dashboard - CBC</title>
-        
+        <script> 
+            $(function(){
+                $("#includedContent").load("PSP-MissingParts.htm"); 
+            });
+        </script> 
     </head>
     <body>
     
@@ -63,11 +67,7 @@
         <main class="container-fluid">
             <!-- Sidebar -->
             <div class="row">
-                
-                <!-- Main content -->
-                <div class="col-auto mx-auto">
-                    <img src="../CBC/Imagen1.png" class="mb-4"/>
-                </div>
+                <div id="includedContent"></div>
             </div>  
         </main>
     
