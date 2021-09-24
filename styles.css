@@ -1,4 +1,4 @@
-:root{
+:root {
     --chart-color0: #00205b;
     --chart-color1: #36a2eb;
     --chart-color2: #9BBB59;
@@ -7,6 +7,7 @@
     --chart-colorObj: #ff0000;
     --chart-colorObj2: #8064A2;
 }
+
 body {
     padding-top: 4.5rem;
     background-color: #edf7fd;
@@ -16,13 +17,16 @@ body {
     background-size: 100% 100%;
     min-height: 100vh;
 }
-#mainMenu{
+
+#mainMenu {
     margin-top: calc((100vh - 56px)/7);
 }
- /*#mainMenu .row{
+
+/*#mainMenu .row{
    margin-top: calc((100vh - 56px)/10);  
-}*/ 
-#mainMenu .row > div{
+}*/
+
+#mainMenu .row>div:first-child {
     height: calc(1880px/4);
     width: calc(2170px/4);
     background-color: #f1f4f5;
@@ -32,18 +36,44 @@ body {
     margin-right: 5em;
     box-shadow: 4px 4px 10px #aaaaaa;
 }
-#mainMenu .row .card{
+
+#mainMenu .row .card {
     background-image: url('./assets/images/logo 3.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .bolded {
-    font-weight:bold;
+    font-weight: bold;
 }
-.bg-airbus-std{
+
+.bg-airbus-std {
     background-color: #00205b;
 }
-.bg-airbus-grey{
+
+.bg-airbus-grey {
     background-color: #b7c9d3;
 }
+
+.disclaimer {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .closebtn:hover {
+    color: black;
+  }
